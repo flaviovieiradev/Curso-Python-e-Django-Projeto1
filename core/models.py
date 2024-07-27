@@ -9,6 +9,7 @@ class Produto(models.Model):
     def __str__(self):
         return self.nome
 
+
 class Cliente(models.Model):
     nome = models.CharField('Nome', max_length=100)
     sobrenome = models.CharField('Sobrenome', max_length=100)
@@ -16,4 +17,3 @@ class Cliente(models.Model):
 
     def __str__(self):
         return f'{self.nome} {self.sobrenome}'
-
